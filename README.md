@@ -10,6 +10,7 @@
 | `.env.example`        | Template for environment variables (rename to `.env` and populate with actual values for use).                                 |
 | `.python-version`     | File specifying the Python version used in this project.                                                                       |
 | `poetry.lock`, `pyproject.toml` | Poetry configuration and dependency files.                                                                                    |
+| `final_labels.csv` | Final dataset with image path, page number, document and label.                                                                                    |
 
 ## Initial Setup
 
