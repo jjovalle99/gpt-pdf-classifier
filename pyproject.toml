@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "gpt-pdf-classifier"
+version = "0.1.0"
+description = ""
+authors = ["jjovalle <jj.ovalle@uniandes.edu.co>"]
+packages = [{include = "src"}]
+
+
+[tool.poetry.dependencies]
+python = "~3.11"
+ipykernel = "^6.29.3"
+g = "^0.0.3"
+python-dotenv = "^1.0.1"
+langchain = "^0.1.12"
+langchain-openai = "^0.0.8"
+langsmith = "^0.1.24"
+pdf2image = "^1.17.0"
+pymupdf = "^1.23.26"
+langchain-anthropic = "^0.1.4"
+pandas = "^2.2.1"
+matplotlib = "^3.8.3"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120 
