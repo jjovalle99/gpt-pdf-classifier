@@ -87,7 +87,7 @@ async def main():
     encoded_images = [encode_image_to_base64(img_path=file) for file in file_names]
     prepared_messages = [prepare_messages(img_base64=img) for img in encoded_images]
     total = len(prepared_messages) // args.batch_size + 1
-    print(file_names)
+    print(len(file_names))
     results = []
     for idx, batch in enumerate(gen_batches(prepared_messages, n=args.batch_size), start=1):
         print(f"Batch {idx}/{total} processing...")
@@ -107,4 +107,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    # Usage: python scripts/get_labels.py data/ 20 --return_exceptions --regex "*_2022-denver-green-code.png" --sleep 60 --output-path labels.csv
+    # Usage: python scripts/get_labels.py data/ 20 --regex "*_2022-denver-green-code.png" --sleep 60 --output-path labels_file1.csv
+    # Usage: python scripts/get_labels.py data/ 20 --regex "*_20201119Complete_Denver_Zoning_Code_updated11122020.png" --sleep 60 --output-path labels_file2.csv

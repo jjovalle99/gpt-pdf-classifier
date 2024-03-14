@@ -45,5 +45,5 @@ if __name__ == "__main__":
     parser.add_argument("--dpi", help="Dots per inch for the output image.", default=300, type=int)
     args = parser.parse_args()
     pdf_to_images(args.pdf_path, args.output_dir, args.image_format, args.dpi)
-    # Usage: python scripts/pdf-to-images.py raw_data/20201119Complete_Denver_Zoning_Code_updated11122020.pdf --output-dir data/ --image-format png --dpi 400
-    # Usage: python scripts/pdf-to-images.py raw_data/2022-denver-green-code.pdf --output-dir data/ --image-format png --dpi 400
+    # Usage: python scripts/pdf-to-images.py raw_data/20201119Complete_Denver_Zoning_Code_updated11122020.pdf --output-dir data/ --image-format png --dpi 300
+    # Usage: python scripts/pdf-to-images.py raw_data/2022-denver-green-code.pdf --output-dir data/ --image-format png --dpi 300
